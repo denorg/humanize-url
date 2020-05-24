@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { mode } from "./mod.ts";
+import { humanizeUrl } from "./mod.ts";
 
-Deno.test("test starter function", async (): Promise<void> => {
-  assertEquals(mode(), 0);
+Deno.test("test humanizeUrl function", async (): Promise<void> => {
+  assertEquals(await humanizeUrl('https://yogi.codes'), 'yogi.codes');
 });

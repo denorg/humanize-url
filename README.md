@@ -28,16 +28,12 @@ Then, the package is available to run:
 starter <arguments>
 ```
 
-Required permissions:
-
-1. `--allow-read`
-
 ## 👩‍💻 Development
 
 Run tests:
 
 ```bash
-deno test --allow-read
+deno test
 ```
 
 ## 📄 License
