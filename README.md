@@ -24,7 +24,7 @@ After [installing DPX](https://github.com/denorg/dpx), you can directly use the 
 
 ```bash
 dpx humanize_url https://yogi.codes
-//=> 'yogi.codes'
+# yogi.codes
 ```
 
 ### CLI
@@ -33,7 +33,7 @@ Alternatively, you can use it directly from the CLI by using `deno run`:
 
 ```bash
 deno run https://deno.land/x/humanize_url/cli.ts https://yogi.codes
-//=> 'yogi.codes'
+# yogi.codes
 ```
 
 You can also install it globally using the following:
@@ -46,21 +46,15 @@ Then, the package is available to run:
 
 ```bash
 humanize_url https://yogi.codes
-//=> 'yogi.codes'
+# yogi.codes
 ```
-
-### Configuration
-
-Required permissions:
-
-1. `--allow-read`
 
 ## 👩‍💻 Development
 
 Run tests:
 
 ```bash
-deno test --allow-read
+deno test
 ```
 
 ## 📄 License
