@@ -32,7 +32,7 @@ dpx humanize_url https://yogi.codes
 Alternatively, you can use it directly from the CLI by using `deno run`:
 
 ```bash
-deno run https://deno.land/x/is_docker/cli.ts https://yogi.codes
+deno run https://deno.land/x/humanize_url/cli.ts https://yogi.codes
 //=> 'yogi.codes'
 ```
 
