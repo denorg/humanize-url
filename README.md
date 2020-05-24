@@ -17,13 +17,13 @@ await validURL('https://yogi.codes');
 Alternatively, you can use it directly from the CLI by using deno run:
 
 ```bash
-deno run --allow-read https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts <url>
+deno run https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts <url>
 ```
 
 You can also install it globally using the following:
 
 ```bash
-deno install --allow-read -n humanize-url https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts
+deno install -n humanize-url https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts
 ```
 
 Then, the package is available to run:
