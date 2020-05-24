@@ -1,31 +1,35 @@
-# 🏁 Deno Starter
+# 🔗 Humanize URL
 
-This is a starter template for building Deno packages, with GitHub Actions CI, tests,and a CLI.
+Humanize a URL in Deno https://yogi.codes → yogi.codes/
 
-[![Test CI](https://github.com/denorg/starter/workflows/Test%20CI/badge.svg)](https://github.com/denorg/starter/actions)
+[![Test CI](https://github.com/denorg/humanize-url/workflows/Test%20CI/badge.svg)](https://github.com/denorg/humanize-url/actions)
 
 ```ts
-import { mode } from "https://raw.githubusercontent.com/denorg/starter/master/mod.ts";
+import { humanizeUrl, validURL } from "https://raw.githubusercontent.com/denorg/humanize-url/master/mod.ts";
 
-const result = mode();
+await humanizeUrl('https://yogi.codes');
+//=> 'yogi.codes'
+
+await validURL('https://yogi.codes');
+//=> true
 ```
 
 Alternatively, you can use it directly from the CLI by using deno run:
 
 ```bash
-deno run --allow-read https://raw.githubusercontent.com/denorg/starter/master/cli.ts <arguments>
+deno run --allow-read https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts <url>
 ```
 
 You can also install it globally using the following:
 
 ```bash
-deno install --allow-read -n starter https://raw.githubusercontent.com/denorg/starter/master/cli.ts
+deno install --allow-read -n humanize-url https://raw.githubusercontent.com/denorg/humanize-url/master/cli.ts
 ```
 
 Then, the package is available to run:
 
 ```bash
-starter <arguments>
+humanize-url <url>
 ```
 
 ## 👩‍💻 Development
