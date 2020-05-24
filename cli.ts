@@ -1,8 +1,20 @@
-import { mode } from "./mod.ts";
+import { humanizeUrl, validURL } from "./mod.ts";
 
-// https://deno.land/manual/tools/script_installer
-if (import.meta.main) {
-  for (let arg of Deno.args) {
-    console.log(arg, mode());
+const cli = async () => {
+  if (Deno.args.length) {
+    const command = Deno.args[0];
+    if (command.length > 0) {
+      if (await validURL(command)) {
+        console.log(await humanizeUrl(command));
+      } else {
+        console.log('Invalid URL')
+      }
+    } else {
+      console.log('Usage:\n$ humanize-url <url>');
+    }
+  } else {
+    console.log('Usage:\n$ humanize-url <url>');
   }
 }
+
+cli();
